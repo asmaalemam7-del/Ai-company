@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>التطبيقات - تطبيقات الذكاء الاصطناعي</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="myFunctions.js"></script>
+</head>
+<body>
+
+  <h1>صفحة التطبيقات</h1>
+
+  <nav class="top-nav">
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="add_app.html">إضافة تطبيق</a>
+    <a href="AboutUs.html">من نحن</a>
+  </nav>
+
+  <table>
+    <tr>
+      <th>اسم التطبيق</th>
+      <th>اسم الشركة المطورة</th>
+      <th>مجال الاستخدام</th>
+      <th>مجاني / غير مجاني</th>
+      <th>إظهار التفاصيل</th>
+    </tr>
+
+    <!-- التطبيق الأول -->
+    <tr>
+      <td>ChatGPT</td>
+      <td>OpenAI</td>
+      <td>Education</td>
+      <td>مجاني</td>
+      <td><input type="checkbox" onclick="toggleDetails('details1')"></td>
+    </tr>
+    <tr id="details1" style="display: none;">
+      <td colspan="5">
+        <strong>رابط الموقع:</strong> <a href="https://chat.openai.com" target="_blank">https://chat.openai.com</a><br>
+        <strong>شرح مختصر:</strong> مساعد ذكي يعتمد على الذكاء الاصطناعي للإجابة على الأسئلة.<br>
+      </td>
+    </tr>
+
+    <!-- التطبيق الثاني -->
+    <tr>
+      <td>Duolingo</td>
+      <td>Duolingo Inc</td>
+      <td>Education</td>
+      <td>مجاني</td>
+      <td><input type="checkbox" onclick="toggleDetails('details2')"></td>
+    </tr>
+    <tr id="details2" style="display: none;">
+      <td colspan="5">
+        <strong>رابط الموقع:</strong> <a href="https://www.duolingo.com" target="_blank">https://www.duolingo.com</a><br>
+        <strong>شرح مختصر:</strong> تطبيق لتعلم اللغات بطريقة تفاعلية.<br>
+      </td>
+    </tr>
+
+    <!-- التطبيق الثالث -->
+    <tr>
+      <td>Canva</td>
+      <td>Canva Pty Ltd</td>
+      <td>Design</td>
+      <td>مجاني</td>
+      <td><input type="checkbox" onclick="toggleDetails('details3')"></td>
+    </tr>
+    <tr id="details3" style="display: none;">
+      <td colspan="5">
+        <strong>رابط الموقع:</strong> <a href="https://www.canva.com" target="_blank">https://www.canva.com</a><br>
+        <strong>شرح مختصر:</strong> أداة تصميم رسومية سهلة الاستخدام لإنشاء محتوى بصري.<br>
+      </td>
+    </tr>
+
+    <!-- التطبيق الرابع -->
+    <tr>
+      <td>Grammarly</td>
+      <td>Grammarly, Inc.</td>
+      <td>Writing</td>
+      <td>غير مجاني</td>
+      <td><input type="checkbox" onclick="toggleDetails('details4')"></td>
+    </tr>
+    <tr id="details4" style="display: none;">
+      <td colspan="5">
+        <strong>رابط الموقع:</strong> <a href="https://www.grammarly.com" target="_blank">https://www.grammarly.com</a><br>
+        <strong>شرح مختصر:</strong> مساعد كتابة يقوم بتصحيح الأخطاء وتحسين الأسلوب والقواعد.<br>
+      </td>
+    </tr>
+
+    <!-- التطبيق الخامس -->
+    <tr>
+      <td>Figma</td>
+      <td>Figma, Inc.</td>
+      <td>Design</td>
+      <td>مجاني</td>
+      <td><input type="checkbox" onclick="toggleDetails('details5')"></td>
+    </tr>
+    <tr id="details5" style="display: none;">
+      <td colspan="5">
+        <strong>رابط الموقع:</strong> <a href="https://www.figma.com" target="_blank">https://www.figma.com</a><br>
+        <strong>شرح مختصر:</strong> منصة تصميم واجهات وتعاون فريقية للعمل على النماذج التفاعلية.<br>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

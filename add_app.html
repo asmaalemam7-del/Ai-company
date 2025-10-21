@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>إضافة تطبيق جديد</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="myFunctions.js"></script>
+</head>
+<body>
+
+  <h1>إدخال معلومات تطبيق جديد</h1>
+
+  <nav class="top-nav">
+    <a href="index.html">الصفحة الرئيسية</a>
+    <a href="apps.html">التطبيقات</a>
+    <a href="AboutUs.html">من نحن</a>
+  </nav>
+
+  <form id="appForm" onsubmit="return validateForm()">
+    <label>اسم التطبيق:</label><br>
+    <input type="text" id="appName" name="appName"><br><br>
+
+    <label>اسم الشركة:</label><br>
+    <input type="text" id="companyName" name="companyName"><br><br>
+
+    <label>رابط الموقع:</label><br>
+    <input type="url" id="website" name="website"><br><br>
+
+    <label>مجاني؟</label><br>
+    <select id="isFree">
+      <option value="">-- اختر --</option>
+      <option value="مجاني">مجاني</option>
+      <option value="غير مجاني">غير مجاني</option>
+    </select><br><br>
+
+    <label>مجال الاستخدام:</label><br>
+    <select id="usageField">
+      <option value="">-- اختر المجال --</option>
+      <option value="Robotics">Robotics</option>
+      <option value="Education">Education</option>
+      <option value="E-Commerce">E-Commerce</option>
+      <option value="Healthcare">Healthcare</option>
+      <option value="Finance">Finance</option>
+    </select><br><br>
+
+    <label>شرح مختصر:</label><br>
+    <textarea id="description" rows="4" cols="50"></textarea><br><br>
+
+    <button type="submit">إرسال</button>
+    <button type="reset">إعادة</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* تنسيق عام للصفحة */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  direction: rtl;
+}
+
+/* تنسيق العناوين */
+h1, h2 {
+  color: #333;
+  font-size: 22px;
+}
+
+/* تنسيق الجدول */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #fff;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+
+table th {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+/* تنسيق الروابط */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* شريط التنقل العلوي تحت العنوان */
+.top-nav {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start; /* في RTL، العنصر الأول على اليمين */
+  margin: 10px 0 18px 0;
+  padding: 6px 0;
+}
+
+.top-nav a {
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: #333;
+  font-weight: 600;
+}
+
+.top-nav a:hover {
+  background: #f0f8ff;
+  border-color: #a8c4ff;
+}
